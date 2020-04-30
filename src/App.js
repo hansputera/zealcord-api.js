@@ -60,8 +60,6 @@ this.fetchUser = async (id) => {
     avatarURL: result.avatarURL,
     displayAvatarURL: result.displayAvatarURL,
     bot: result.bot
-   /* createdAt: new Date(result.createdAt),
-    createdTimestamp: result.createdTimestamp*/
   };
   if (user.bot === true || result.bot === true) {
     user.ownedBy = result.ownedBy
@@ -70,34 +68,10 @@ this.fetchUser = async (id) => {
   };
   return user;
 };
-/*
-        this.fetchUser = async function (id) {
-            if (!id) throw new Error("[fetchUser] No ID was provided");
-            const { body } = await req.get(`https://app.zealcord.xyz/api/fetchUser?id=${id}`);
-            console.log(body)
-            let user;
-
-            //if (body.error === "unknown_user") return undefined;
-
-            user = {
-                id: body.id,
-                username: body.username,
-                discriminator: body.discriminator,
-                tag: body.tag,
-                avatar: body.avatar,
-                avatarURL: body.avatarURL,
-                displayAvatarURL: body.displayAvatarURL,
-                bot: body.bot,
-                createdAt: new Date(body.createdTimestamp),
-                createdTimestamp: body.createdTimestamp
-            };
-
-            if (user.bot === true || body.bot === true) {
-                user.ownedBy = body.ownedBy;
-            } else {
-                user.bots = body.bots;
-            }
-
-            return user;
-        };
-*/
+/* -------------------------------------- */
+/* Struktur Data diambil dari zealcord.js */
+/* Module ini dibuat karena saya bosan:v */
+/* Jadi Module ini tidak membutuhkan token */
+/* Token tidak butuhkan seperti di package zealcord.js */
+/* DAHLAH, ~ FlockNet#7343 */
+/* ---------------------------------------*/
