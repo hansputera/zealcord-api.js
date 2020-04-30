@@ -1,0 +1,12 @@
+{
+  "name": "zealcord-api.js",
+  "description": "Mengambil data dari Zealcord.xyz tanpa token berbasis JavaScript.",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./test/index.js"
+  },
+  "devDependencies": {
+    "node-superfetch": "^0.1.10"
+  }
+}
