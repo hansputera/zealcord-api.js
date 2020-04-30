@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ."
   },
-  "author": "FlockNet#7343"
+  "author": "FlockNet#7343",
   "license": "MIT",
   "devDependencies": {
     "node-superfetch": "^0.1.10"
